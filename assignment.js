@@ -1,15 +1,23 @@
+// https://github.com/Saad-001/third-assignment
 
-// start kilometerToMeter function
+
+// start kilometer to meter function
 
 function kilometerToMeter(kilometer) {
     var MeterValue = 1000;
-    var meterIs = MeterValue * kilometer;
+    if(kilometer < 0){
+        console.log("kilometer is undefined")
+    }
+    else{
+        var meterIs = MeterValue * kilometer;
+    }
+    
     return meterIs;
 }
-var result = kilometerToMeter(41);
+var result = kilometerToMeter(-1);
 console.log(result);
 
-// end kilometerToMeter function
+// end kilometer to meter function
 
 
 // start megaFriends function
